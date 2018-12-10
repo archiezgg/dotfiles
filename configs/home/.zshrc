@@ -11,6 +11,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.profile
 
 # f*ck plugin settings
 eval $(thefuck --alias)

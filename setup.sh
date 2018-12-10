@@ -31,3 +31,6 @@ sudo aptitude install -y atom
 
 # placing config files where they belong
 sudo cp -r configs/home/. $HOME
+
+# chromium
+sudo aptitude install -y chromium-browser

@@ -30,4 +30,4 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 sudo aptitude install -y atom
 
 # placing config files where they belong
-cp -r configs/home/. $HOME
+sudo cp -r configs/home/. $HOME

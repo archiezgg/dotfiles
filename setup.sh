@@ -10,8 +10,8 @@ sudo aptitude install -y vim
 sudo aptitude install -y docker.io
 
 # java
-# sudo aptitude install -y openjdk-8-jdk
-# sudo aptitude install -y openjdk-8-jre
+sudo aptitude install -y openjdk-8-jdk
+sudo aptitude install -y openjdk-8-jre
 
 # python
 sudo aptitude install -y python
@@ -23,11 +23,12 @@ sudo pip3 install thefuck
 
 # zsh and oh-my-zsh
 sudo aptitude install -y zsh
-sudo chsh -s $(which zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo chsh -s $(which zsh)
 
 # atom
-sudo aptitude install -y atom
+sudo aptitude-repository ppa:webupd8team/atom
+sudo aptitude install atom
 
 # placing config files where they belong
 sudo cp -r configs/home/. $HOME

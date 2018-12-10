@@ -1,0 +1,15 @@
+[user]
+	name = Istvan Nemeth
+	email = nemethistvan.ius@gmail.com
+	username = IstvanN
+[push]
+	default = matching
+[alias]
+	c = commit
+	s = status
+	aa = add -A
+	cm = commit -m
+	cam = commit -am
+	co = checkout
+	cob = checkout -b
+	b = branch

@@ -35,3 +35,6 @@ sudo cp -r configs/home/. $HOME
 
 # chromium
 sudo aptitude install -y chromium-browser
+
+# expect interpreter
+sudo aptitude install expect

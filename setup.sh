@@ -35,6 +35,3 @@ sudo cp -r configs/home/. $HOME
 
 # chromium
 sudo aptitude install -y chromium-browser
-
-# install dconf to load keyboard-shortcuts.conf
-sudo aptitude install -y dconf-tools

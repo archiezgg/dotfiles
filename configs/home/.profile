@@ -19,11 +19,15 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
+# turn off the touchpad
+xinput disable 11
+
 echo "Initializing... Please wait... 99%"
 echo "Docker and Java are all set. Neat!"
 
 # custom envs
 export LS_COLORS="di=01;04;31"
+export PATH=$PATH:/usr/local/go/bin
 
 # custom aliases
 alias xd="xinput disable 11"
@@ -39,3 +43,4 @@ alias enteredward="${SCRIPT_HOME}/edward.sh"
 alias upgradepls="${SCRIPT_HOME}/upgrade.sh"
 alias gitrekt="${SCRIPT_HOME}/gitpush.sh"
 alias ls="ls --color --group-directories-first"
+alias gogogo="cd $HOME/go/src/github.com/IstvanN"

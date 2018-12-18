@@ -12,7 +12,7 @@ plugins=(
 
 source $HOME/.profile
 source $ZSH/oh-my-zsh.sh
-PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}golang/ %{$reset_color%}%{${fg_bold[red]}%}%3~ $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
+PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}golang/ 🐧 %{$reset_color%}%{${fg_bold[red]}%}%3~ $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
 
 
 # f*ck plugin settings

@@ -22,6 +22,9 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 echo "Initializing... Please wait... 99%"
 echo "Docker and Java are all set. Neat!"
 
+# custom envs
+export LS_COLORS="di=01;04;31"
+
 # custom aliases
 alias xd="xinput disable 11"
 alias xe="xinput enable 11"

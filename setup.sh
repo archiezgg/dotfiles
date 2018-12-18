@@ -39,7 +39,6 @@ sudo apt-get install spotify-client
 
 # kdocker for spotify
 sudo apt-get install kdocker -y
-# follow the instructions here to kdocker spotify: https://robbinespu.github.io/eng/2018/03/17/Minimize_spotify_linux.html
 
 # placing config files where they belong
 sudo cp -r configs/home/. $HOME

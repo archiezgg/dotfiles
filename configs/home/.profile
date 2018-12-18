@@ -28,6 +28,7 @@ echo "Docker and Java are all set. Neat!"
 # custom envs
 export LS_COLORS="di=01;04;31"
 export PATH=$PATH:/usr/local/go/bin
+export SCRIPT_HOME="$HOME/Documents/scripts"
 
 # custom aliases
 alias xd="xinput disable 11"

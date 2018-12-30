@@ -19,9 +19,6 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-# turn off the touchpad
-xinput disable 11
-
 echo "Initializing... Please wait... 99%"
 echo "Docker and Java are all set. Neat!"
 
@@ -34,7 +31,6 @@ export SCRIPT_HOME="$HOME/Documents/scripts"
 alias xd="xinput disable 11"
 alias xe="xinput enable 11"
 alias wttr="curl wttr.in/budapest"
-alias la="ls -a"
 alias cd.="cd ../"
 alias mymysql="${SCRIPT_HOME}/mysql.sh"
 alias gradle4="${HOME}/programming/gradle-4.10/bin/gradle"
@@ -44,4 +40,5 @@ alias enteredward="${SCRIPT_HOME}/edward.sh"
 alias upgradepls="${SCRIPT_HOME}/upgrade.sh"
 alias gitrekt="${SCRIPT_HOME}/gitpush.sh"
 alias ls="ls --color --group-directories-first"
+alias la="ls -a"
 alias gogogo="cd $HOME/go/src/github.com/IstvanN"

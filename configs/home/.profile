@@ -24,7 +24,8 @@ echo "Docker and Java are all set. Neat!"
 
 # custom envs
 export LS_COLORS="di=01;04;31"
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH="$HOME/go"
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 export SCRIPT_HOME="$HOME/Documents/scripts"
 
 # custom aliases

@@ -25,7 +25,7 @@ echo "Docker and Java are all set. Neat!"
 # custom envs
 export LS_COLORS="di=01;04;31"
 export GOPATH="/home/archiez/go"
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/exercism
 export SCRIPT_HOME="$HOME/Documents/scripts"
 
 # custom aliases

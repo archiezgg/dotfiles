@@ -32,10 +32,10 @@ sudo apt-get install spotify-client
 # kdocker for spotify
 sudo apt-get install kdocker -y
 
-# placing config files where they belong
-sudo cp -r configs/home/. $HOME
-
 # zsh and oh-my-zsh
 sudo apt-get install -y zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 sudo chsh -s $(which zsh)
+
+# placing config files where they belong
+sudo cp -r configs/home/. $HOME

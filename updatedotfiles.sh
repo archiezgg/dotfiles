@@ -4,4 +4,4 @@ sudo cp $HOME/.profile $HOME/.zshrc $HOME/.vimrc $HOME/.bashrc $HOME/.gitconfig 
 cd $HOME/.dotfiles
 git add -A
 git commit -m "fix(update): regular update initiated by bash script"
-$HOME/Documents/scripts/gitpush.sh
+git push origin master

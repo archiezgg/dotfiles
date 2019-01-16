@@ -11,7 +11,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}golang/ 🐧 %{$reset_color%}%{${fg_bold[red]}%}%3~ $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
+PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}sysops/ 🐧 %{$reset_color%}%{${fg_bold[red]}%}%3~ $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
 
 source $HOME/.profile
 export PATH=$PATH:/usr/local/go/bin

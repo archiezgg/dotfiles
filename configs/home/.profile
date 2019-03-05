@@ -45,3 +45,6 @@ alias ls="ls --color --group-directories-first"
 alias la="ls -a"
 alias dotfilesupdate="$HOME/.dotfiles/updatedotfiles.sh"
 alias gogogo="cd $GOPATH/src/github.com/IstvanN/"
+
+# clearing path of duplicates
+export PATH=$($HOME/go/bin/cleanpath -p)

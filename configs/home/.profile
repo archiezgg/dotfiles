@@ -20,7 +20,7 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 echo "Initializing... Please wait... 99%"
-echo "Docker and Java are all set. Neat!"
+echo "Docker and Golang are all set. Neat!"
 
 # custom envs
 export LS_COLORS="di=01;04;31"
@@ -30,8 +30,8 @@ export SCRIPT_HOME="$HOME/Documents/scripts"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/exercism:$SCRIPT_HOME
 
 # custom aliases
-alias xd="xinput disable 11"
-alias xe="xinput enable 11"
+alias xd="xinput disable 10"
+alias xe="xinput enable 10"
 alias wttr="curl wttr.in/budapest"
 alias cd.="cd ../"
 alias cd..="cd ../../"

@@ -28,7 +28,6 @@ export GOPATH="/home/archiez/go"
 export GOROOT="/usr/local/go"
 export SCRIPT_HOME="$HOME/Documents/scripts"
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/exercism:$SCRIPT_HOME
-export PORT="8080"
 
 # custom aliases
 alias xd="xinput disable 9"

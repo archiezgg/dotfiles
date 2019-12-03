@@ -39,6 +39,7 @@ alias cd...="cd ../../../"
 alias upgradepls="${SCRIPT_HOME}/upgrade.sh"
 alias ls="ls --color --group-directories-first"
 alias la="ls -a"
+alias ll="ls -la"
 alias dotfilesupdate="$HOME/.dotfiles/updatedotfiles.sh"
 alias gogogo="cd $GOPATH/src/github.com/IstvanN/"
 

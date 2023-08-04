@@ -10,10 +10,23 @@ plugins=(
   git
 )
 
+get_return_status_symbol() {
+    if [ $? -eq 0 ]; then
+        echo "%F{green}✓%f"   # Green checkmark
+    else
+        echo "%F{red}✗%f"     # Red x mark
+    fi
+}
+
 source $ZSH/oh-my-zsh.sh
-PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}r2/ 🐧 %{$reset_color%}%{${fg_bold[red]}%}%3~ $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
+PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}r2/ 🐧 $(get_return_status_symbol) $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
 
-source ~/.profile
+# kubectl autocompletion
+source <(kubectl completion zsh)
 
-# f*ck plugin settings
-eval $(thefuck --alias)
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
+
+# aliases
+alias tg="terragrunt"
+alias tf="terraform"

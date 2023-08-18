@@ -1,6 +1,4 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
   export ZSH="/home/archiez/.oh-my-zsh"
 
@@ -19,7 +17,7 @@ get_return_status_symbol() {
 }
 
 source $ZSH/oh-my-zsh.sh
-PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}r2/ 🐧 $(get_return_status_symbol) $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
+PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}🐧 %d $(get_return_status_symbol) $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
 
 # kubectl autocompletion
 source <(kubectl completion zsh)

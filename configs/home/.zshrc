@@ -8,14 +8,6 @@ plugins=(
   git
 )
 
-get_truncated_path() {
-    local path
-    local truncated_path
-    path=$(pwd)
-    truncated_path=$(echo "$path" | /usr/bin/sed "s|^$HOME|~|;s|/\([^/]\+\)/\([^/]\+\)/\([^/]\+\)$|/\1/\2/\3|" | /usr/bin/awk -F/ '{ if (NF > 5) { print ".../" $(NF-1) "/" $(NF) } else { print $0 } }')
-    echo "$truncated_path"
-}
-
 get_return_status_symbol() {
     if [ $? -eq 0 ]; then
         echo "%F{green}✓%f"   # Green checkmark

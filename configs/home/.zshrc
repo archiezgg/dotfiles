@@ -25,7 +25,7 @@ get_return_status_symbol() {
 }
 
 source $ZSH/oh-my-zsh.sh
-PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}🐧 $(get_truncated_path) $(get_return_status_symbol) $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
+PROMPT='%{${fg_bold[blue]}%}%n %{${reset_color}%}%{${fg[blue]}%}🐧 %1~ $(get_return_status_symbol) $(git_prompt_info)%{${fg_bold[yellow]}%}%{${reset_color}%}%{${fg[blue]}%}»%{${reset_color}%} '
 
 # kubectl autocompletion
 source <(kubectl completion zsh)
